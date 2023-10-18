@@ -46,7 +46,7 @@ read_student_records <- function(num_students) {
 num_students <- as.integer(readline("Enter the number of students: "))
 
 if (is.na(num_students) || num_students <= 0) {
-  cat("Invalid input. Please enter a positive integer for the number of students.\n")
+  cat("Invalid input.\n")
 } else {
   cat("\nEnter student records for", num_students, "students:\n")
   student_records <- read_student_records(num_students)
